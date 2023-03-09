@@ -1,9 +1,9 @@
-class MavenNoopenjdk < Formula
+class MavenNoopenjdkAT363 < Formula
   desc "Java-based project management"
   homepage "https://maven.apache.org/"
   url "https://www.apache.org/dyn/closer.lua?path=maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz"
   mirror "https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz"
-  sha256 "c7047a48deb626abf26f71ab3643d296db9b1e67f1faa7d988637deac876b5a9"
+  sha256 "26ad91d751b3a9a53087aefa743f4e16a17741d3915b219cf74112bf87a438c5"
   license "Apache-2.0"
 
   livecheck do
@@ -11,9 +11,9 @@ class MavenNoopenjdk < Formula
     regex(/href=.*?apache-maven[._-]v?(\d+(?:\.\d+)+)-bin\.t/i)
   end
 
-  
 
-  
+
+
 
   conflicts_with "mvnvm", because: "also installs a 'mvn' executable"
 
