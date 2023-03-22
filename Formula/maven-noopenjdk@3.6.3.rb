@@ -31,7 +31,7 @@ class MavenNoopenjdkAT363 < Formula
     Pathname.glob("#{libexec}/bin/*") do |file|
       next if file.directory?
 
-      basename = file.basename
+      basename = file.basename.sub! '@3.6.3',''
       next if basename.to_s == "m2.conf"
 
       (bin/basename).write_env_script file, Language::Java.overridable_java_home_env
